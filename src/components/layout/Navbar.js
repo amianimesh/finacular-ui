@@ -18,7 +18,10 @@ const Navbar = () => {
                 <SignedInLinks />
             </div>
         </nav>
+        <div>
         <ul class='sidenav my-sidenav-1' id='slide-out'>
+            <div style={{justifyContent:'space-between'}}>
+            <div>
             <li>
                 <a href='#' class='btn indigo'>
                     <span className='white-text'>Dashboard</span>
@@ -43,13 +46,14 @@ const Navbar = () => {
                     <i class='material-icons left'>date_range</i>
                 </a>
             </li>
-            <li>
-                <div class='user-view'>
+            </div>
+            <div class='user-view' style={{marginTop:'350px'}}>
                     <a href='#user'><img class='circle' src={require('../../Images/pic1.jpeg')}/></a>
                     <a href="#name"><span class="black-text name">Animesh K</span></a>
-                </div>
-            </li>
+            </div>
+            </div>
         </ul>
+        </div>
         <ul class='sidenav my-sidenav-2' id='slide-in'>
                 <div className='row'>
                         <div class='col s12 l12'>
